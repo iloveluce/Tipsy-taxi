@@ -1,0 +1,48 @@
+
+
+#mainvis{
+	position: relative;
+	width:100%;
+	margin-top: 15px;
+
+}
+.input_container{
+	text-align: center;
+}
+#time_graph{
+	width:400px;
+}
+#title{
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 50px;
+    color: #f1c40f;
+    margin-bottom: 30px;
+}
+#subtitle{
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 20px;
+    color: #f1c40f;
+    margin-bottom: 30px;
+}
+#posid{
+	font-family: Helvetica;
+	float: left;
+}
+#dateinput{
+	font-family: Helvetica;
+	float: right;
+}
+#boroughs {
+  stroke: grey;
+  stroke-width: 2px;
+  fill: none;
+}
+.pospoint{
+  fill: blue;
+}
+.poshidden{
+  fill: none !important;
