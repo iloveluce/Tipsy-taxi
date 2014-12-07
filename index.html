@@ -117,7 +117,7 @@ function graphing(tograph){
           return "translate(" + projection([d.pickup_longitude ,d.pickup_latitude]) + ")";})
         .attr("r", function(d){
         if (size_on_stat)
-        	return d.tip_amount/d.fare_amount*10
+        	return d.fare_amount/4
        	else
        		return 2
         })
