@@ -58,7 +58,7 @@ var svg = d3.select("body").append("svg")
 
 var projection = d3.geo.mercator()
                     .center([-73.97, 40.75])
-                    .scale(230000)
+                    .scale(150000)
                     .translate([(width) / 2, (height)/2]);
 
   var path = d3.geo.path()
@@ -116,10 +116,11 @@ function graphing(tograph){
         .attr("transform", function(d) {
           return "translate(" + projection([d.pickup_longitude ,d.pickup_latitude]) + ")";})
         .attr("r", function(d){
-        if (size_on_stat)
-        	return d.tip_amount/d.fare_amount*10
+        var poop =  d.tip_amount/d.fare_amount
+        if (poop > 1)
+        	return 0
        	else
-       		return 2
+       		return poop*10
         })
         .attr("class", function(d){
 
