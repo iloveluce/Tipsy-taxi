@@ -116,11 +116,10 @@ function graphing(tograph){
         .attr("transform", function(d) {
           return "translate(" + projection([d.pickup_longitude ,d.pickup_latitude]) + ")";})
         .attr("r", function(d){
-        var poop =  d.tip_amount/d.fare_amount
-        if (poop > 1)
-        	return 0
+        if (size_on_stat)
+        	return d.fare_amount/4
        	else
-       		return poop*10
+       		return 2
         })
         .attr("class", function(d){
 
