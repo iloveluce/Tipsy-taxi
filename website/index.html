@@ -52,7 +52,7 @@
                         <li><a href="#skills" class="scroll-link">Fraud</a></li>
                         <li><a href="#experience" class="scroll-link">Traffic</a></li>
                         <li><a href="#portfolio" class="scroll-link">For Drivers</a></li>
-                        <li><a href="#contactUs" class="scroll-link">For Passengers</a></li>
+                        <li><a href="#contactUs" class="scroll-link">For Users</a></li>
                     </ul>
                 </div>
                 <!--/.navbar-collapse-->
@@ -83,7 +83,7 @@
     </section>
     <!--About-->
     <section id="aboutUs" class="secPad">
-        <div class="container">
+        <div id="hablaingle"class="container">
             <div class="heading text-center">
                 <!-- Heading -->
                 <h2>VISUALIZING NYC WITH TAXIS</h2>
@@ -93,14 +93,12 @@
 
              <div class="banner-container">
              <img src="images/pickup_nyc.jpg" alt="NYC visualization" />
-           	</div>
               <div class="banner-container">
              <img src="images/Fares.png" alt="NYC visualization" />
                 <!-- end: -->
               </div>
                 <!-- end: -->
-
- 				<div class="container word-container">
+              </div>
                 <p> We see that the vast majority of trips are clustered in Manhattan and in two smaller spots outside the immediate vacinity of the city. Searching for the values of those latitudes and longitudes in Google Maps led us to discover that those smaller spots are reflective of Lagurdia and JRK Airports. As it turns out, $52 is the flat rate for a trip from Manhattan to JFK Airport, explaining the spike in fare amount noted in the histogram above.</p>
             </div>
         </div>
@@ -121,37 +119,19 @@
         <div class="heading text-center">
                 <!-- Heading -->
                 <h2>FRAUD</h2>
-            </div>
-            <div class="container word-container">
-
-                 <p>  We began our analysis of tip data by plotting a simple histogram of tips as a percentage of the total cost of the ride (fare + tolls + taxes). It became immediately clear that the vast majority of trips had a reported tip percentage of 0%, which seemed rather unusual</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
 
            <div class="banner-container">
              <img src="images/Tips.png" alt="NYC visualization" />
-
             </div>
-            <div class="container word-container">
 
-                 <p> We quickly discovered, however, that the vast majority of the trips with 0% tip were trips where the passenger paid with cash rather than card. In fact, the average tip percentage for trips paid in cash was considerably less than 1%, where the average tip percentage for trips paid by card was almost 18%. This led us to the hypothesis that taxi drivers were likely under-reporting tips when they were paid in cash, as they could simply pocket the money and not be taxed, where when the trip was paid by card the taxi company was given the exact breakdown of fare versus tip. Thus for the sake of accurately analyzing tip data, we decided to only look at trips where the passenger paid by card. The tip data was now much more reasonable and showed predictable spikes around 10%, 15%, 20%, 25%, 30%, and 35%, which makes sense given the pre-selectable values that appear on the screen when paying by card.</p>
-            </div>
              <div class="banner-container">
              <img src="images/Tips%20Corrected.png" alt="NYC visualization" />
             </div>
-             <div class="container word-container">
-
-                 <p> Now that we had clearly identified the issue of under-reporting tips, we thought it would be useful to develop a tool for predicting this fraud in order. Using this un-skewed data we were able to build a model by which we could predict the tip a driver should receive on average based on various features of the trip, such as the time of day, the length of the trip, the pickup and drop-off locations, etc. As it turns out, the most important features in determining the tip a taxi driver will receive on average are the length of the trip, the time of day the trip is taken, and the speed of the trip. The pickup and drop-off locations were also rather significant.</p>
-            </div>
-
              <div class="banner-container">
              <img src="images/Tips%20Features.png" alt="NYC visualization" />
-      				</div>
-             <div class="container word-container">
-
-                 <p> In the end, the random forest classifier was able to predict almost 40% of tips to the nearest percent. However, in predicting whether or not a cab driver is committing fraud, we are really only concerned with whether the reported tip is unreasonably low. Thus, the problem was simplified to simply predict whether the tip would be greater or less than 10%. In this new scenario, the random forest classifier was approximately 88% accurate. This thus represents a very valuable tool for predicting and cracking down on the under-reporting of cash tips.</p>
             </div>
-
-             </div>
 
 
     </section>
@@ -165,23 +145,11 @@
            <div class="heading text-center">
                 <!-- Heading -->
                 <h2>TRAFFIC</h2>
-
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
-
-             <div class="banner-container">
-             <img src="images/Speed.png" alt="NYC visualization" />
-
+ 				<div class="banner-container">
+             <img src="images/Fares%20Over%20Day.png" alt="NYC visualization" />
             </div>
-
-             <div class="banner-container">
-             <img src="images/Speed%20over%20Week.png" alt="NYC visualization" />
-
-            </div>
-             <div class="banner-container">
-             <img src="images/Number%20of%20Trips.png" alt="NYC visualization" />
-
-            </div>
-
 
 
 
@@ -208,51 +176,21 @@
     </section>
 
 	<!--Contact -->
-
-  <div class="container">
+    <section id="contactUs" class="page-section secPad">
+        <div class="container">
       <div class="heading text-center">
 
       	<h2>FOR PASSENGERS</h2>
       </div>
-         <div class="container word-container">
 
-                 <p> We also wanted to build a model that would be useful for the average person, too. So, we decided to try to predict the base fare for any given ride a person would want to take in and around the NYC area. The two factors that largely contribute to fare quote are the trip time and the trip distance, so we needed to build a model that would use machine learning to essentially predict both and return a base fare amount. We figured that using pick-up and drop-off location we would be able to query the Google Maps API to get an estimated trip distance, and that using time of day and day of the week we would be able to predict trip time based upon traffic patterns. </p>
-            </div>
-
-      	<div class="banner-container">
-          <img src="images/Fares%20Over%20Day.png" alt="NYC visualization" />
-        </div>
-         <div class="container word-container">
-
-                 <p> We found, however, that the day of the week and month of the year had very little effect on the average fare rate; on the other hand, as you can see above, fare rate did vary based upon the time of day. Therefore, using all the data from January 28th, 2013, we built a random forest classifier with 50 trees to take in the pick-up location, drop-off location, trip distance, and time of day and output a predicted fare for any given day of the year </p>
-            </div>
   			<div class="banner-container">
              <img src="images/Fare%20Features.png" alt="NYC visualization" />
         </div>
-         <div class="container word-container">
-
-                 <p> We can see that trip distance is the most important factor for predicting, followed by time of day and location (presumably where the estimated trip time comes from). We then plotted our results to visually see the correlation. </p>
-            </div>
 
         	<div class="banner-container">
              <img src="images/Fare%20Predictions.png" alt="NYC visualization" />
-</div>
- <div class="container word-container">
 
-                 <p> There is obviously a clear correlation between predicted fare and actual fare, although there is still an average variation of about ten dollars. We found, however, that we could predict a person’s fare within a range of 5 dollars on any day of the year with around 78% accuracy. </p>
-            </div>
-<!--     <iframe
-    width="600"
-    height="450"
-    frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDwR_Jjr_HvSf1ACnF7ubgCjXBSp0wztW8
-      &q=Butchart+Gardens+Victoria+BC
-      &attribution_source=Google+Maps+Embed+API
-      &attribution_web_url=http://www.butchartgardens.com/
-      &attribution_ios_deep_link_id=comgooglemaps://?daddr=Butchart+Gardens+Victoria+BC">
-  </iframe>
- -->
-
+    </section>
     <footer>
         <div class="container">
             <div class="social text-center">
