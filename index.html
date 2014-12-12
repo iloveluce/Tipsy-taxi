@@ -48,11 +48,11 @@
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" id="mainNav">
                         <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-                        <li><a href="#aboutUs" class="scroll-link">NYC Taxis</a></li>
-                        <li><a href="#skills" class="scroll-link">Fraud</a></li>
-                        <li><a href="#experience" class="scroll-link">Traffic</a></li>
+                        <li><a href="#nyctaxis" class="scroll-link">NYC Taxis</a></li>
+                        <li><a href="#fraud" class="scroll-link">Fraud</a></li>
+                        <li><a href="#traffic" class="scroll-link">Traffic</a></li>
                         <li><a href="#portfolio" class="scroll-link">For Drivers</a></li>
-                        <li><a href="#contactUs" class="scroll-link">For Passengers</a></li>
+                        <li><a href="#passengers" class="scroll-link">For Passengers</a></li>
                     </ul>
                 </div>
                 <!--/.navbar-collapse-->
@@ -82,7 +82,7 @@
 
     </section>
     <!--About-->
-    <section id="aboutUs" class="secPad">
+    <section id="nyctaxis" class="secPad">
         <div class="container">
             <div class="heading text-center">
                 <!-- Heading -->
@@ -94,10 +94,7 @@
              <div class="banner-container">
              <img src="images/pickup_nyc.jpg" alt="NYC visualization" />
            	</div>
-              <div class="banner-container">
-             <img src="images/Fares.png" alt="NYC visualization" />
-                <!-- end: -->
-              </div>
+
                 <!-- end: -->
 
  				<div class="container word-container">
@@ -106,7 +103,7 @@
         </div>
     </section>
     <!--Quote-->
-    <section id="quote" class="bg-parlex">
+    <section class="bg-parlex-two">
         <div class="parlex-back">
             <div class="container secPad text-center">
 				<h2>NYC Taxis move about 600,000 people per day | 236 million per year</h2>
@@ -116,7 +113,7 @@
     </section>
 
     <!--Skills-->
-    <section id="skills" class="secPad white">
+    <section id="fraud" class="secPad white">
     	<div class="container">
         <div class="heading text-center">
                 <!-- Heading -->
@@ -156,11 +153,18 @@
 
     </section>
 
-
+    <section class="bg-parlex-three">
+        <div class="parlex-back">
+            <div class="container secPad text-center">
+				<h2>A typical taxi travels 70,000 miles per year </h2>
+            </div>
+            <!--/.container-->
+        </div>
+    </section>
 
 
     <!--Experience-->
-    <section id="experience" class="secPad">
+    <section id="traffic" class="secPad">
     	<div class="container">
            <div class="heading text-center">
                 <!-- Heading -->
@@ -187,6 +191,14 @@
 
     </section>
 
+    <section class="bg-parlex">
+        <div class="parlex-back">
+            <div class="container secPad text-center">
+				<h2>There are over 50,000 taxi drivers</h2>
+            </div>
+            <!--/.container-->
+        </div>
+    </section>
 
    <!--Portfolio-->
     <section id="portfolio" class="page-section section appear clearfix secPad">
@@ -207,8 +219,16 @@
 
     </section>
 
+<section class="bg-parlex-four">
+        <div class="parlex-back">
+            <div class="container secPad text-center">
+				<h2>A typical driver shift is about 9.5 hours</h2>
+            </div>
+            <!--/.container-->
+        </div>
+    </section>
 	<!--Contact -->
-
+<section id="passengers">
   <div class="container">
       <div class="heading text-center">
 
@@ -239,9 +259,19 @@
 </div>
  <div class="container word-container">
 
-                 <p> There is obviously a clear correlation between predicted fare and actual fare, although there is still an average variation of about ten dollars. We found, however, that we could predict a person’s fare within a range of 5 dollars on any day of the year with around 78% accuracy. </p>
+                 <p> There is obviously a clear correlation between predicted fare and actual fare, although there is still an average variation of about ten dollars. We found, however, that we could predict a person’s fare within a range of 5 dollars on any day of the year with around 78% accuracy. We also found it to be interesting that there were so many actual and predicted fares at $52.00 exactly, so we plotted a histogram of fares. </p>
             </div>
-<!--     <iframe
+
+                 <div class="banner-container">
+             <img src="images/Fares.png" alt="NYC visualization" />
+                <!-- end: -->
+              </div>
+               <div class="container word-container">
+
+                 <p> The histogram confirms that there’s an unusual spike in the data at $52.00. After a little research, we discovered that $52.00 is the flat rate for traveling from Manhattan to JFK Airport, explaining the spike.</p>
+            </div>
+ </section >
+<!--     <iframe'
     width="600"
     height="450"
     frameborder="0" style="border:0"
