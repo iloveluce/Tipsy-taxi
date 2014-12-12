@@ -543,6 +543,8 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 }
 .parlex-back {
+
+font-style: italic;
 padding: 30px 0;
 background-color: rgba(0, 0, 0, 0.37);
 color: #FDFDFD !important;
