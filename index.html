@@ -48,11 +48,12 @@
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" id="mainNav">
                         <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-                        <li><a href="#nyctaxis" class="scroll-link">NYC Taxis</a></li>
+                        <li><a href="#nyctaxis" class="scroll-link">Introduction</a></li>
                         <li><a href="#fraud" class="scroll-link">Fraud</a></li>
                         <li><a href="#traffic" class="scroll-link">Traffic</a></li>
                         <li><a href="#portfolio" class="scroll-link">For Drivers</a></li>
                         <li><a href="#passengers" class="scroll-link">For Passengers</a></li>
+                        <li><a href="#screencast" class="scroll-link">screencast</a></li>
                     </ul>
                 </div>
                 <!--/.navbar-collapse-->
@@ -78,6 +79,31 @@
          <p>Our group began with the knowledge that we wanted to do a project dealing with traffic and transportation that would be applicable to large groups of individuals. While searching for datasets on the internet that we could use or websites to scrape from, we stumbled across a dataset containing taxicab data from 2013 - tip amounts, fare rates, dropoff and pickup location, time of ride, distance of ride, etc. We felt this particular set had a ton of useful and easily accessible information we could use to draw interesting conclusions about fares and tip amounts as well as possibly traffic patterns. Thousands of taxi move about the city everyday transporting thousands of people, there are bound to be interesting things to discover.</p>
             </div>
         </div>
+       <div class = "container person-container">
+	<div class= "person left">
+			<img src = "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10731100_10154757872870147_299062577533539036_n.jpg?oh=ef127b6fe5bc4314cd2c10d14f61fb9d&oe=5510DC8F&__gda__=1427126245_b30405d2cf833e68caf7c652d65e73ba" width="200" height="300"></img>
+
+		<p>Luciano Arango ’16 </p>
+		<p> Computer Science Concentrator</p>
+		<p>Adams House</p>
+		<p>Medellin, Colombia</p>
+	</div>
+	<div class= "person left">
+			<img src = "https://scontent-a-lga.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10150673_10200911723114410_2188188385103904847_n.jpg?oh=4da3343e29670ee19268858595a098aa&oe=54F9FA34" width="200" height="300"></img>
+		<p>Justin Oliver ’16</p>
+		<p> Applied Math Concentrator</p>
+		<p>Adams House</p>
+		<p>Toronto, ON</p>
+	</div>
+	<div class= "person right">
+		<img src = "https://scontent-b-lga.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/267881_2237547265295_7157298_n.jpg?oh=1034f3e0358d772f85299acce1f6f8ba&oe=5543A355" width="200" height="300"></img>
+		<p>Ali Monfre ’16</p>
+		<p> Applied Math Concentrator</p>
+		<p>Green Bay, WI</p>
+		<p>Medellin, Colombia</p>
+	</div>
+</div>
+
 
     </section>
     <!--About-->
@@ -85,22 +111,44 @@
         <div class="container">
             <div class="heading text-center">
                 <!-- Heading -->
-                <h2>VISUALIZING NYC WITH TAXIS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h2>INTRODUCTION</h2>
             </div>
+                  <div class="container word-container">
 
+                 <p> Our original data set was acquired by Chris Wong through a FOIL request to the NYC Taxi and Limousine Commission. Chris Wong then made the data available through links from his website to different Torrents at http://chriswhong.com/open-data/foil_nyc_taxi/. We read in a random sample of 240,000 taxi trips from 2013, and plotted their pickup locations below. You can very clearly see Manhattan and some of the other Burroughs outlined by the taxi trips, as well as the heavily-visited JFK and Laguardia Airports.</p>
+
+
+
+            </div>
 
              <div class="banner-container">
              <img src="images/pickup_nyc.jpg" alt="NYC visualization" />
            	</div>
 
                 <!-- end: -->
-
+<!--
  				<div class="container word-container">
                 <p> We see that the vast majority of trips are clustered in Manhattan and in two smaller spots outside the immediate vacinity of the city. Searching for the values of those latitudes and longitudes in Google Maps led us to discover that those smaller spots are reflective of Lagurdia and JRK Airports. As it turns out, $52 is the flat rate for a trip from Manhattan to JFK Airport, explaining the spike in fare amount noted in the histogram above.</p>
-            </div>
+            </div> -->
         </div>
     </section>
+    <section id="cd-team" class="cd-section">
+	<div class="cd-container">
+		<h2>Our team</h2>
+		<ul>
+			<li>
+				<a href="#0" data-type="member-1">
+					<figure><!-- .... --></figure>
+					<div class="cd-member-info"><!-- .... --></div>
+				</a>
+			</li>
+
+			<li>one person</li>
+
+			<li><!-- .... --></li>
+		</ul>
+	</div>
+</section>
     <!--Quote-->
     <section class="bg-parlex-two">
         <div class="parlex-back">
@@ -120,7 +168,7 @@
             </div>
             <div class="container word-container">
 
-                 <p>  We began our analysis of tip data by plotting a simple histogram of tips as a percentage of the total cost of the ride (fare + tolls + taxes). It became immediately clear that the vast majority of trips had a reported tip percentage of 0%, which seemed rather unusual</p>
+                 <p>  We began our analysis of tip data by plotting a simple histogram of tips as a percentage of the total cost of the ride (fare + tolls + taxes). It became immediately clear that the vast majority of trips had a reported tip percentage of 0%, which seemed rather unusual.</p>
             </div>
 
            <div class="banner-container">
@@ -256,7 +304,7 @@
         </div>
          <div class="container word-container">
 
-                 <p> We found, however, that the day of the week and month of the year had very little effect on the average fare rate; on the other hand, as you can see above, fare rate did vary based upon the time of day. Therefore, using all the data from January 28th, 2013, we built a random forest classifier with 50 trees to take in the pick-up location, drop-off location, trip distance, and time of day and output a predicted fare for any given day of the year </p>
+                 <p> We found, however, that the day of the week and month of the year had very little effect on the average fare rate; on the other hand, as you can see above, fare rate did vary based upon the time of day. Therefore, using all 440,000 trips from January 28th, 2013, we built a random forest classifier with 50 trees to take in the pick-up location, drop-off location, trip distance, and time of day and output a predicted fare for any given day of the year. </p>
             </div>
   			<div class="banner-container">
              <img src="images/Fare%20Features.png" alt="NYC visualization" />
@@ -283,6 +331,32 @@
                  <p> The histogram confirms that there’s an unusual spike in the data at $52.00. After a little research, we discovered that $52.00 is the flat rate for traveling from Manhattan to JFK Airport, explaining the spike.</p>
             </div>
  </section >
+<section class="bg-parlex-five">
+        <div class="parlex-back">
+            <div class="container secPad text-center">
+				<h2>The average tip for NYC taxis is 18%</h2>
+            </div>
+            <!--/.container-->
+        </div>
+    </section>
+<section id="screencast">
+  <div class="container">
+  	 <div class="heading text-center">
+
+      	<h2>SCREENCAST</h2>
+      </div>
+      <div style="text-align:center">
+       <!-- <div class="banner-container"> -->
+                  <iframe width="800" height="500" src="//www.youtube.com/embed/tRDJDq6PkWQ" frameborder="0" allowfullscreen > </iframe>
+      <!--   </div> -->
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+
+ </div>
+ </section>
 <!--     <iframe'
     width="600"
     height="450"
@@ -298,11 +372,8 @@
     <footer>
         <div class="container">
             <div class="social text-center">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"><i class="fa fa-flickr"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
+
+                <a href="https://github.com/lucianoiscool/Tipsy-taxi"><i class="fa fa-github"></i></a>
             </div>
 
             <div class="clear"></div>
