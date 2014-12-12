@@ -1,205 +1,237 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <title>Tipsy Taxi</title>
+    <meta name="description" content="">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
 
-<link rel="stylesheet" type="text/css" href="./css/style.css" />
-<link type="text/css" rel="stylesheet" href="./css/colorbrewer.css"/>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <!-- Owl Carousel Assets -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome -->
+    <link href="font/css/font-awesome.min.css" rel="stylesheet">
 
- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
+</head>
 
 <body>
-<h1 id = "title">Tipsy Taxi</h1>
-<h2 id = "subtitle">Now Displaying Trips at 12:00</h2>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top logo"><b>Tipsy Taxi</b></a>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="mainNav">
+                        <li class="active"><a href="#home" class="scroll-link">Home</a></li>
+                        <li><a href="#aboutUs" class="scroll-link">NYC Taxis</a></li>
+                        <li><a href="#skills" class="scroll-link">Fraud</a></li>
+                        <li><a href="#experience" class="scroll-link">Traffic</a></li>
+                        <li><a href="#portfolio" class="scroll-link">For Drivers</a></li>
+                        <li><a href="#contactUs" class="scroll-link">For Users</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </header>
+    <!--/.header-->
+    <div id="#top"></div>
+    <section id="home">
+        <div class="banner-container">
 
-<!-- Filter to ID <input type="text" id ="posinput" > -->
-<div class="input_container">
-	<input type="range" min="1" max="24" step="1" id="time_graph">
+            <img src="images/nyc_taxi.jpg" alt="banner" />
+
+
+
+        </div>
+    </section>
+    <section id="introText">
+        <div class="container">
+            <div class="text-center">
+            <h1>There are on average 485,000 taxi trips per day in NYC</h1>
+              <p>Our group began with the knowledge that we wanted to do a project dealing with traffic and transportation that would be applicable to large groups of individuals. While searching for datasets on the internet that we could use or websites to scrape from, we stumbled across a dataset containing taxicab data from 2013 - tip amounts, fare rates, dropoff and pickup location, time of ride, distance of ride, etc. We felt this particular set had a ton of useful and easily accessible information we could use to draw interesting conclusions about fares and tip amounts as well as possibly traffic patterns. Thousands of taxi move about the city everyday transporting thousands of people, there are bound to be interesting things to discover.</p>
+            </div>
+        </div>
+
+    </section>
+    <!--About-->
+    <section id="aboutUs" class="secPad">
+        <div id="hablaingle"class="container">
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2>Visualizing NYC in Taxi Pick-Ups</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+
+
+             <div class="banner-container">
+             <img src="images/pickup_nyc.jpg" alt="NYC visualization" />
+              <div class="banner-container">
+             <img src="images/Fares.png" alt="NYC visualization" />
+                <!-- end: -->
+              </div>
+                <!-- end: -->
+              </div>
+                <p> We see that the vast majority of trips are clustered in Manhattan and in two smaller spots outside the immediate vacinity of the city. Searching for the values of those latitudes and longitudes in Google Maps led us to discover that those smaller spots are reflective of Lagurdia and JRK Airports. As it turns out, $52 is the flat rate for a trip from Manhattan to JFK Airport, explaining the spike in fare amount noted in the histogram above.</p>
+            </div>
+        </div>
+    </section>
+    <!--Quote-->
+    <section id="quote" class="bg-parlex">
+        <div class="parlex-back">
+            <div class="container secPad text-center">
+				<h2>NYC Taxis move about 600,000 people per day | 236 million per year</h2>
+            </div>
+            <!--/.container-->
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section id="skills" class="secPad white">
+    	<div class="container">
+        <div class="heading text-center">
+                <!-- Heading -->
+                <h2>Fraud</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            </div>
+
+           <div class="banner-container">
+             <img src="images/Tips.png" alt="NYC visualization" />
+            </div>
+
+             <div class="banner-container">
+             <img src="images/Tips%20Corrected.png" alt="NYC visualization" />
+            </div>
+             <div class="banner-container">
+             <img src="images/Tips%20Features.png" alt="NYC visualization" />
+            </div>
+
+
+    </section>
+
+
+
+
+    <!--Experience-->
+    <section id="experience" class="secPad">
+    	<div class="container">
+           <div class="heading text-center">
+                <!-- Heading -->
+                <h2>Traffic</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            </div>
+ 				<div class="banner-container">
+             <img src="images/Fares%20Over%20Day.png" alt="NYC visualization" />
+            </div>
+
+
+
+    </section>
+
+
+   <!--Portfolio-->
+    <section id="portfolio" class="page-section section appear clearfix secPad">
+        <div class="container">
+
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2>For Drivers</h2>
+                <p>We created a Tips Heatmap so drivers could even </p>
+                <br>
+                <p>Click on the image below to use it!</p>
+            </div>
+            <div class="banner-container">
+            <a href="./heatmap.html"> <img src="images/heatmap.png" alt="NYC visualization" /></a>
+            </div>
+
+
+
+    </section>
+
+	<!--Contact -->
+    <section id="contactUs" class="page-section secPad">
+        <div class="container">
+      <div class="heading text-center">
+
+      	<h2>For Users</h2>
+      </div>
+
+  			<div class="banner-container">
+             <img src="images/Fare%20Features.png" alt="NYC visualization" />
+        </div>
+
+        	<div class="banner-container">
+             <img src="images/Fare%20Predictions.png" alt="NYC visualization" />
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="social text-center">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+
+            <div class="clear"></div>
+            <!--CLEAR FLOATS-->
+        </div>
+    </footer>
+
+
+<!--   <div id="panel">
+      <h2 id = "subtitle">Now Displaying Trips at 12:00</h2>
+
+      <div class="input_container">
+  <input type="range" min="1" max="24" step="1" id="time_graph">
 </div>
-<div><select class="color_select">
-            <option value="YlGn">YlGn</option>
-            <option value="YlGnBu">YlGnBu</option>
-            <option value="GnBu">GnBu</option>
-            <option value="BuGn">BuGn</option>
-            <option value="PuBuGn">PuBuGn</option>
-            <option value="PuBu">PuBu</option>
-            <option value="BuPu">BuPu</option>
-            <option value="RdPu">RdPu</option>
-            <option value="PuRd">PuRd</option>
-            <option value="OrRd">OrRd</option>
-            <option value="YlOrRd" selected>YlOrRd</option>
-            <option value="YlOrBr">YlOrBr</option>
-            <option value="Purples">Purples</option>
-            <option value="Blues" >Blues</option>
-            <option value="Greens">Greens</option>
-            <option value="Oranges">Oranges</option>
-            <option value="Reds">Reds</option>
-            <option value="Greys">Greys</option>
-          </optgroup>
-        </select></div>
-<script>
+      <button onclick="toggleHeatmap()">Toggle Heatmap</button>
+      <button onclick="changeGradient()">Change gradient</button>
+      <button onclick="changeRadius()">Change radius</button>
+      <button onclick="changeOpacity()">Change opacity</button>
+    </div>
+    <div id="map-canvas"></div>
 
-var current_data = {}
-var size_on_stat = true
-var width = $(window).width() ,
-   height = $(window).height()/1.5;
+</div> -->
 
-var allposid = {};
+    <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-    .attr("id", "mainvis")
-    .attr("class", "YlOrRd")
-     .append("g")
-    .call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom))
-  .append("g");
-
-var projection = d3.geo.mercator()
-                    .center([-73.97, 40.75])
-                    .scale(150000)
-                    .translate([(width) / 2, (height)/2]);
-
-  var path = d3.geo.path()
-      .projection(projection);
-
-
-var graph = svg.append("g")
-
-
-  d3.json("./fixtures/nyc.json", function(error, nyb) {
-
-var format_date = d3.time.format("%Y-%m-%d %X");
-
-var color = d3.scale.category20()
-
-
-
-  graph.append("g")
-    .attr("id", "boroughs")
-    .selectAll(".state")
-    .data(nyb.features)
-    .enter().append("path")
-    .attr("class", function(d){ return d.properties.name ; })
-    .attr("d", path);
-
-
-
-d3.csv("small_master.csv", function(error, pos) {
-	maxtip =  d3.max(pos, function(d) { return +0.4;} );
-
-	quantize = d3.scale.quantile().domain([0, maxtip]).range(d3.range(9));
-	for (var idx in pos){
-
-		pos[idx].pickup_datetime = format_date.parse(pos[idx].pickup_datetime)
-		hour = pos[idx].pickup_datetime.getHours() + 1
-		if(hour in current_data){
-			current_data[hour].push(pos[idx])
-		}
-		else{
-			current_data[hour] = []
-			current_data[hour].push(pos[idx])
-		}
-	}
-
-	graphing(current_data[12])
-})
-
-  });
-function graphing(tograph){
-
-	  graph.selectAll(".positions")
-    .data(tograph)
-    .enter()
-    .append("circle")
-        .attr("transform", function(d) {
-          return "translate(" + projection([d.pickup_longitude ,d.pickup_latitude]) + ")";})
-        .attr("r", function(d){
-        if (size_on_stat)
-        	return d.fare_amount/4
-       	else
-       		return 2
-        })
-        .attr("class", function(d){
-
-           return "pickup q" + quantize(d.tip_amount/d.fare_amount) + "-9";
-
-          //return "pospoint p" + d.positionable_id;
-        })
-        // .style("fill", function(d){
-        //  d.epoch = new Date(d.created_at).getTime();
-        // if(!allposid[d.positionable_id]){
-        //   allposid[d.positionable_id] = 1;
-        // }
-        //  return color(d.positionable_id)
-        // })
-}
-// handling input
-
-d3.select("#time_graph").on("input", function() {
- update_hour(+this.value);
-});
-
-function update_hour(hour){
-	d3.select("#subtitle").text("Now Displaying Trips at "+ hour+":00")
-	graph.selectAll(".pickup").remove()
-	graphing(current_data[hour])
-
-}
-
-d3.select(".color_select").on("change", function() {
-  d3.selectAll("svg").attr("class", this.value);
-});
-
-$("#posinput").keyup(posfilter);
-$("#etime").keyup(datechange)
-$("#stime").keyup(datechange)
-
-
-function posfilter (){
-
-  var value = $("#posinput").val();
-
-  if(allposid[value] === 1){
-    d3.select("#subtitle").text("Now Displaying Driver: "+ value)
-    d3.select("#posinput").style("background-color", "rgb(203, 250, 201)")
-    d3.selectAll(".pospoint").classed("poshidden", true)
-     d3.selectAll(".p"+value).classed("poshidden", false)
-  }
-  else if(value === ''){
-    d3.select("#subtitle").text("Now Displaying Driver: All Drivers")
-    d3.selectAll(".pospoint").classed("poshidden", false)
-  }
-  else{
-  d3.select("#subtitle").text("Invalid Driver")
-   d3.select("#posinput").style("background-color", "rgb(241, 136, 136)")
-  }
- }
-
-function datechange (){
-
-  var Sepoch =  new Date($("#stime").val()).getTime()
-  var Eepoch = new Date($("#etime").val()).getTime()
-  if(Sepoch && Eepoch){ //if both are set
-    if(Sepoch > 0 && Eepoch > 0){//and above 0
-    d3.selectAll(".pospoint")
-    .classed("poshidden", function(d){
-
-    if(d.epoch > Sepoch && d.epoch < Eepoch)
-      return false;
-    else
-      return true;
-    })
-    }
-  }
-
- }
-function zoom() {
-  svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-}
-
-
-</script>
+    <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+    <script src="js/modernizr-latest.js"></script>
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="js/jquery.nav.js" type="text/javascript"></script>
+    <script src="js/jquery.cslider.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
 </body>
 </html>
